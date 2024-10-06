@@ -13,10 +13,8 @@ body {
   background: var(--Very-Light-blue, #ecf2ff);
 }
 .main {
-  /* width: 736px; */
   width: 100%;
   max-width: 736px;
-  height: 512px;
   display: flex;
   border-radius: 32px;
   background: var(--White, #fff);
@@ -24,8 +22,8 @@ body {
 }
 
 .result_cont {
-  padding: 40px;
-  width: 100%;
+  padding: 40px 20px;
+  flex-grow: 1;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -35,15 +33,14 @@ body {
     linear-gradient(180deg, #75f 0%, #6943ff 0.01%, #2f2ce9 100%)
   );
   gap: 30px;
+  flex-grow: 1;
 }
 
 .result_heading {
   color: var(--Light-Blue, #cac9ff);
   font-feature-settings: "liga" off, "clig" off;
   font-size: 24px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
 }
 
 .oval {
@@ -69,9 +66,7 @@ body {
 .svg_text2 {
   font-family: "Hanken Grotesk";
   font-size: 18px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
   opacity: 0.5168;
 }
 
@@ -101,21 +96,21 @@ body {
   display: flex;
   flex-direction: column;
   padding: 40px;
-  gap: 41px;
+  gap: 40px;
+  flex-grow: 1;
 }
 
 .summary_heading {
   color: var(--Dark-Navy, #303b59);
   font-size: 24px;
-  /* font-style: normal; */
   font-weight: 700;
-  /* line-height: normal; */
 }
 
 .skills_container {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  width: 100%;
 }
 
 .summary_skills_cont {
@@ -125,9 +120,6 @@ body {
 }
 
 .skills {
-  /* width: 288px; */
-
-  height: 56px;
   display: flex;
   border-radius: 12px;
   padding: 17px 16px;
@@ -185,7 +177,6 @@ body {
 }
 
 .continue {
-  width: 288px;
   height: 56px;
   text-align: center;
   border-radius: 128px;
@@ -217,9 +208,7 @@ body {
 
 .skill_name {
   font-size: 18px;
-  font-style: normal;
   font-weight: 500;
-  line-height: normal;
   font-feature-settings: "liga" off, "clig" off;
 }
 
@@ -257,8 +246,45 @@ body {
   color: var(--Blue, #1125d6);
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 700px) {
+  .result_cont {
+    padding: 40px 5px;
+  }
+  .summary_cont {
+    padding: 40px 10px;
+  }
+  .skill_name,
+  .first_score,
+  .second_score,
+  .result_p {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 480px) {
   .main {
     flex-direction: column;
+  }
+  .continue {
+    width: 100%;
+  }
+  .result_cont {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+  }
+  .result_heading,
+  .summary_heading {
+    font-size: 18px;
+  }
+  .result_great {
+    font-size: 24px;
+  }
+  .svg_text {
+    font-size: 56px;
+  }
+  .svg_text2 {
+    font-size: 16px;
+  }
+  .result_p {
+    width: auto;
   }
 }
