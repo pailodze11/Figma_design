@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Hanken Grotesk";
+  background: var(--Very-Light-blue, #ecf2ff);
+}
+.main {
+  /* width: 736px; */
+  width: 100%;
+  max-width: 736px;
+  height: 512px;
+  display: flex;
+  border-radius: 32px;
+  background: var(--White, #fff);
+  box-shadow: 0px 30px 60px 0px rgba(61, 108, 236, 0.15);
+}
+
+.result_cont {
+  padding: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 32px;
+  background: var(
+    --Gradient-1,
+    linear-gradient(180deg, #75f 0%, #6943ff 0.01%, #2f2ce9 100%)
+  );
+  gap: 30px;
+}
+
+.result_heading {
+  color: var(--Light-Blue, #cac9ff);
+  font-feature-settings: "liga" off, "clig" off;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.oval {
+  width: 200px;
+  height: 200px;
+  fill: var(
+    --Gradient-2,
+    linear-gradient(
+      180deg,
+      #4d21c9 0%,
+      rgba(37, 33, 201, 0) 100%,
+      rgba(37, 33, 201, 0) 100%
+    )
+  );
+}
+
+.svg_text {
+  text-align: center;
+  font-size: 72px;
+  font-weight: 800;
+}
+
+.svg_text2 {
+  font-family: "Hanken Grotesk";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  opacity: 0.5168;
+}
+
+.result_text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+}
+
+.result_great {
+  color: var(--White, #fff);
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.result_p {
+  margin: 0;
+  color: var(--Light-Blue, #cac9ff);
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  width: 260px;
+}
+
+.summary_cont {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  gap: 41px;
+}
+
+.summary_heading {
+  color: var(--Dark-Navy, #303b59);
+  font-size: 24px;
+  /* font-style: normal; */
+  font-weight: 700;
+  /* line-height: normal; */
+}
+
+.skills_container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.summary_skills_cont {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.skills {
+  /* width: 288px; */
+
+  height: 56px;
+  display: flex;
+  border-radius: 12px;
+  padding: 17px 16px;
+  justify-content: space-between;
+}
+
+.skill1 {
+  background: var(
+    --red-95-white,
+    linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.95) 0%,
+      rgba(255, 255, 255, 0.95) 100%
+    ),
+    #f55
+  );
+}
+
+.skill2 {
+  border-radius: 12px;
+  background: var(
+    --yellow-95-white,
+    linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.95) 0%,
+      rgba(255, 255, 255, 0.95) 100%
+    ),
+    #ffb21e
+  );
+}
+
+.skill3 {
+  background: var(
+    --green-95-white,
+    linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.95) 0%,
+      rgba(255, 255, 255, 0.95) 100%
+    ),
+    #00bb8f
+  );
+}
+
+.skill4 {
+  border-radius: 12px;
+  background: var(
+    --blue-95-white,
+    linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.95) 0%,
+      rgba(255, 255, 255, 0.95) 100%
+    ),
+    #1125d6
+  );
+}
+
+.continue {
+  width: 288px;
+  height: 56px;
+  text-align: center;
+  border-radius: 128px;
+  background: var(--Dark-Navy, #303b59);
+  color: var(--White, #fff);
+  font-size: 18px;
+  font-weight: 700;
+  border-style: none;
+}
+
+.continue:active {
+  background: var(
+    --Gradient-1,
+    linear-gradient(180deg, #75f 0%, #6943ff 0.01%, #2f2ce9 100%)
+  );
+}
+
+.icon_cont {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.skill_name {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  font-feature-settings: "liga" off, "clig" off;
+}
+
+.score_cont {
+  display: flex;
+  gap: 8px;
+}
+
+.first_score {
+  color: var(--Dark-Navy, #303b59);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.second_score {
+  color: var(--Dark-Navy, #303b59);
+  font-size: 18px;
+  font-weight: 700;
+  opacity: 0.5;
+}
+
+.color1 {
+  color: var(--Red, #f55);
+}
+
+.color2 {
+  color: var(--Yellow, #ffb21e);
+}
+
+.color3 {
+  color: var(--Green, #00bb8f);
+}
+
+.color4 {
+  color: var(--Blue, #1125d6);
+}
+
+@media screen and (max-width: 375px) {
+  .main {
+    flex-direction: column;
+  }
+}
